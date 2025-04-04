@@ -116,7 +116,7 @@ const drawBubble = (data) => {
               
               node.on("mouseover", (event, d) => {
                   tooltip.transition().duration(200).style("opacity", .9);
-                  tooltip.html(`<strong>${d.data.name}</strong><br/>₦${formatAllocation(d.data.value)}`)
+                  tooltip.html(`Local Government: <strong>${d.data.name}</strong><br/>State: <strong>${d.data.state}</strong><br/>₦${formatAllocation(d.data.value)}`)
                     .style("left", (event.pageX + 10) + "px")
                     .style("top", (event.pageY - 28) + "px");
                 })
